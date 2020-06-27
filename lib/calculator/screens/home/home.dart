@@ -35,10 +35,13 @@ class _MyHomePageState extends State<MyHomePage> {
     loadSavedTip();
   }
 
-  void loadSavedTip(){
+  void loadSavedTip() async {
     //load default tip
-    SharedPrefs.loadTip().then((value) =>
-    tipController = TextEditingController(text: value.toString()));
+    SharedPrefs.loadTip().then((value) {
+      setState(() {
+        tipController = TextEditingController(text: value.toString());
+      });
+    });
   }
 
   void _calculate() {
@@ -76,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
       'split': (bill + bill * tip) / split,
     });
     sharedMessage =
-        'Amount:${billController.text}\nTip amount:${result['tip']}\nTotal amount:${result['amount']}\nEach person pays:${result['split']}';
+        'Bill: ${billController.text}\nTip: ${result['tip']}\nTotal: ${result['amount']}\nEach person pays: ${result['split']}';
     showDialog(
         context: context,
         barrierDismissible: false,
@@ -88,8 +91,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-
-
     return Scaffold(
       appBar: MainAppBar(
           title: Text(
