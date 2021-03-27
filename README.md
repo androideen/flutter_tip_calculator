@@ -1,6 +1,6 @@
-# tipcalculator
+# Fluttre Tip Calculator
 
 This is my first app written in Flutter. It has basic features of a tip calculator.
 
-From: https://tltemplates.com/
+From: https://www.tldevtech.com/flutter-tip-calculator-app/
 
