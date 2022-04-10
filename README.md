@@ -5,3 +5,9 @@ This is my first app written in Flutter. It has basic features of a tip calculat
 From: https://www.tldevtech.com/flutter-tip-calculator-app/
 
 More Flutter templates: https://www.tldevtech.com/flutter-app-templates/
+
+TODO:
+
+- [ ] Remove all log print lines
+- [ ] Remove deprecated functions
+- [x] Increase font size
