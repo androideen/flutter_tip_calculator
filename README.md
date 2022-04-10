@@ -6,8 +6,3 @@ From: https://www.tldevtech.com/flutter-tip-calculator-app/
 
 More Flutter templates: https://www.tldevtech.com/flutter-app-templates/
 
-TODO:
-
-- [ ] Remove all log print lines
-- [ ] Remove deprecated functions
-- [x] Increase font size
